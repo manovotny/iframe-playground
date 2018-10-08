@@ -1,0 +1,27 @@
+{
+  "name": "manovotny.com",
+  "description": "My personal website.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Michael Novotny",
+    "email": "manovotny@gmail.com",
+    "url": "https://manovotny.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manovotny/manovotny.com.git"
+  },
+  "engines": {
+    "node": "8.12.0",
+    "yarn": ">=1.5.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"serve parent --listen 1234 --no-clipboard\" \"serve iframe --listen 5678 --no-clipboard\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "4.0.1",
+    "serve": "10.0.2"
+  }
+}
